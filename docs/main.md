@@ -1,6 +1,13 @@
 # Documento de Pruebas
 
 ## 1. Descripcion del Sistema
+### Plataforma de Gestión de Eventos Universitarios
+
+La plataforma permite:
+
+- Registro de estudiantes.
+- Validación de código estudiantil.
+- Inscripción a eventos.
 
 ## 2. Requerimientos a Evaluar
 ### RF-01 Registro de Estudiante:
@@ -30,7 +37,7 @@ Un estudiante podrá inscribirse a un evento solo si:
 ## 5. Trazabilidad
 | Requerimiento | Técnica | Casos Asociados |
 |--------------|---------|----------------|
-| RF-01 | Valor Limite | CP-01, CP-02 |
-| RF-02 | Partición de equivalencia - Análisis de valores límite | CP-03, CP-04 |
-| RF-03 | Tabla de desicion | CP-05, CP-06 |
+| RF-01 | Valor Limite | CP-01, CP-02, CP-03, CP-04, CP-05, CP-06|
+| RF-02 | Partición de equivalencia - Análisis de valores límite | CP-07, CP-08,CP-09,CP-10,CP-11,CP-12,CP-13,CP-14,CP-15,CP-16,CP-17 |
+| RF-03 | Tabla de desicion | CP-18, CP-19,CP-20,CP-21,CP-22,CP-23,CP-24,CP-25 |
 ## 6. Gestion de Versiones (GitFlow)
