@@ -12,14 +12,14 @@ La plataforma permite:
 3.Inscripción a eventos.
 
 ## 2. Requerimientos a Evaluar
-### Rf01 regitros de estudiantes 
+### RF-01 regitros de estudiantes 
 
 ## 3. Tecnicas de Prueba Aplicadas
 La tecnica usada seria pruebas por valor limite: 
 Porque basicamente el Rf01 usa valores numericos y tiene un limite inferior y superior entonces el mejor a usar es el valor limite.
 
 ## 4. Casos de Prueba Diseñados
-Valor limite: 
+### Valor limite del RF-01: 
 
 | Numero de caso | Entrada   | valor esperado |
 |----------------|-----------|----------------|
