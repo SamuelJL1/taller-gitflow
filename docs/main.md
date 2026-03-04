@@ -8,7 +8,7 @@ La plataforma permite:
 3.Inscripción a eventos.
 
 ## 2. Requerimientos a Evaluar
-###Rf01 regitros de estudiantes 
+### Rf01 regitros de estudiantes 
 
 ## 3. Tecnicas de Prueba Aplicadas
 La tecnica usada seria pruebas por valor limite: 
