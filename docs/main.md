@@ -23,14 +23,14 @@
 
 | Regla | C1 Registrado | C2 Cupos | C3 Ya inscrito | Resultado |
 |--------|--------------|----------|---------------|------------|
-| R1     | Sí           | Sí       | No            | Permitir   |
-| R2     | No           | Sí       | No            | Rechazar   |
-| R3     | Sí           | No       | No            | Rechazar   |
-| R4     | Sí           | Sí       | Sí            | Rechazar   |
-| R5     | No           | No       | No            | Rechazar   |
-| R6     | No           | Sí       | Sí            | Rechazar   |
-| R7     | Sí           | No       | Sí            | Rechazar   |
-| R8     | No           | No       | Sí            | Rechazar   |
+| CP-18  | Sí           | Sí       | No            | Permitir   |
+| CP-19  | No           | Sí       | No            | Rechazar   |
+| CP-20  | Sí           | No       | No            | Rechazar   |
+| CP-21  | Sí           | Sí       | Sí            | Rechazar   |
+| CP-22  | No           | No       | No            | Rechazar   |
+| CP-23  | No           | Sí       | Sí            | Rechazar   |
+| CP-24  | Sí           | No       | Sí            | Rechazar   |
+| CP-25  | No           | No       | Sí            | Rechazar   |
 
 ## 5. Trazabilidad
 
