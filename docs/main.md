@@ -14,9 +14,38 @@ La plataforma permite:
 ## 2. Requerimientos a Evaluar
 ### RF-01 regitros de estudiantes 
 
+
+
 ## 3. Tecnicas de Prueba Aplicadas
 La tecnica usada seria pruebas por valor limite: 
 Porque basicamente el Rf01 usa valores numericos y tiene un limite inferior y superior entonces el mejor a usar es el valor limite.
+
+Se utilizarán:
+
+- Partición de equivalencia
+- Análisis de valores límite
+
+#### Partición de equivalencia
+
+Permite dividir las entradas en:
+
+- Clases válidas
+- Clases inválidas (por longitud, formato o contenido)
+
+Así se prueban representantes de cada grupo sin necesidad de evaluar todas las combinaciones posibles.
+
+
+#### Análisis de valores límite
+
+El requisito exige exactamente 8 caracteres, por lo tanto:
+
+- 7 caracteres → inválido  
+- 8 caracteres → válido  
+- 9 caracteres → inválido  
+
+Esto permite detectar errores comunes en validaciones de longitud.
+
+---
 
 ## 4. Casos de Prueba Diseñados
 ### Valor limite del RF-01: 
@@ -34,6 +63,70 @@ Se garantiza la cobertura completa del requerimiento RF-01 mediante la aplicaci�
 
 
 
+
+###  4. Casos de prueba RF2
+
+#### Casos válidos
+
+| Caso | Entrada     | Resultado Esperado |
+|------|------------|-------------------|
+| 7 | E1234567 | Válido |
+| 8 | E0000000 | Válido |
+| 9 | E9876543 | Válido |
+
+Todos cumplen:
+- 8 caracteres  
+- Inician por E  
+- 7 números después  
+
+---
+#### Casos inválidos
+
+##### Longitud incorrecta
+
+| Caso | Entrada | Resultado Esperado | Motivo |
+|-----|-----|-------------------|--------|
+| 10 | E123456  | Inválido | 7 caracteres |
+| 11 | E12345678 | Inválido | 9 caracteres |
+
+---
+
+##### No inicia con E
+
+| Caso | Entrada | Resultado Esperado | Motivo |
+|------|----------|-------------------|--------|
+| 12 | A1234567 | Inválido | No inicia con E |
+| 13 | 12345678 | Inválido | No inicia con E |
+
+---
+
+##### Caracteres no numéricos después de la E
+
+| Caso | Entrada | Resultado Esperado | Motivo |
+|------|---------|--------------------|--------|
+| 14 | E1234A67 | Inválido | Contiene letra |
+| 15 | E1234-67 | Inválido | Contiene símbolo |
+| 16 | E1234 67 | Inválido | Contiene espacio |
+
+---
+
+##### E en minúscula (si el sistema distingue mayúsculas y minúsculas)
+
+| Caso | Entrada | Resultado Esperado | Motivo |
+|-----|-----|-------------------|--------|
+| 17 | e1234567 | Inválido | No cumple formato requerido |
+
+---
+
+Se cubren:
+
+- Clases válidas
+- Errores de longitud
+- Errores de formato
+- Errores de tipo de carácter
+- Posible error por mayúscula/minúscula
+
+La cobertura es adecuada porque se prueba al menos un representante de cada partición válida e inválida.
 
 ## 5. Trazabilidad
 
