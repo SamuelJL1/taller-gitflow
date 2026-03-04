@@ -5,6 +5,8 @@
 ## 2. Requerimientos a Evaluar
 
 ## 3. Tecnicas de Prueba Aplicadas
+
+## 4. Casos de Prueba Diseñados
 ### RF3-Inscripción a Evento
 #### Condiciones
 
@@ -16,8 +18,6 @@
 
 - A1: Permitir inscripción
 - A2: Rechazar inscripción
-
-
 
 #### Tabla de Decisión
 
@@ -31,8 +31,6 @@
 | R6     | No           | Sí       | Sí            | Rechazar   |
 | R7     | Sí           | No       | Sí            | Rechazar   |
 | R8     | No           | No       | Sí            | Rechazar   |
-
-## 4. Casos de Prueba Diseñados
 
 ## 5. Trazabilidad
 
