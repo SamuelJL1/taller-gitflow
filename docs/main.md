@@ -3,28 +3,10 @@
 ## 1. Descripcion del Sistema
 
 ## 2. Requerimientos a Evaluar
-### Requerimiento Funcional 02 – Código de Estudiante
 
-### 1. Análisis del requerimiento
-
-El sistema debe permitir al usuario tener un codigo unico de estudiantes con las siguientes ensepecificaciones:
-
-1. Tener exactamente 8 caracteres.
-2. Iniciar con la letra "E".
-3. Los 7 caracteres restantes deben ser numéricos (0–9).
-
-Esto implica que:
-- No puede tener menos ni más de 8 caracteres.
-- No puede iniciar con otra letra.
-- No puede contener letras después de la primera posición.
-- No puede tener símbolos ni espacios.
-
----
 
 
 ## 3. Tecnicas de Prueba Aplicadas
-
-### 2. Técnica de prueba seleccionada RF2
 
 Se utilizarán:
 
@@ -52,8 +34,6 @@ El requisito exige exactamente 8 caracteres, por lo tanto:
 Esto permite detectar errores comunes en validaciones de longitud.
 
 ---
-
-
 
 ## 4. Casos de Prueba Diseñados
 
