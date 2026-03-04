@@ -43,9 +43,9 @@ Esto permite detectar errores comunes en validaciones de longitud.
 
 | Caso | Entrada     | Resultado Esperado |
 |------|------------|-------------------|
-| 1 | E1234567 | Válido |
-| 2 | E0000000 | Válido |
-| 3 | E9876543 | Válido |
+| 7 | E1234567 | Válido |
+| 8 | E0000000 | Válido |
+| 9 | E9876543 | Válido |
 
 Todos cumplen:
 - 8 caracteres  
@@ -57,37 +57,37 @@ Todos cumplen:
 
 ##### Longitud incorrecta
 
-| Entrada | Resultado Esperado | Motivo |
+| Caso | Entrada | Resultado Esperado | Motivo |
 |----------|-------------------|--------|
-| E123456  | Inválido | 7 caracteres |
-| E12345678 | Inválido | 9 caracteres |
+| 10 | E123456  | Inválido | 7 caracteres |
+| 11 | E12345678 | Inválido | 9 caracteres |
 
 ---
 
 ##### No inicia con E
 
-| Entrada | Resultado Esperado | Motivo |
-|----------|-------------------|--------|
-| A1234567 | Inválido | No inicia con E |
-| 12345678 | Inválido | No inicia con E |
+| Caso | Entrada | Resultado Esperado | Motivo |
+| 12 |----------|-------------------|--------|
+| 13 | A1234567 | Inválido | No inicia con E |
+| 14 | 12345678 | Inválido | No inicia con E |
 
 ---
 
 ##### Caracteres no numéricos después de la E
 
-| Entrada | Resultado Esperado | Motivo |
+| Caso | Entrada | Resultado Esperado | Motivo |
 |----------|-------------------|--------|
-| E1234A67 | Inválido | Contiene letra |
-| E1234-67 | Inválido | Contiene símbolo |
-| E1234 67 | Inválido | Contiene espacio |
+| 15 | E1234A67 | Inválido | Contiene letra |
+| 16 | E1234-67 | Inválido | Contiene símbolo |
+| 17 | E1234 67 | Inválido | Contiene espacio |
 
 ---
 
 ##### E en minúscula (si el sistema distingue mayúsculas y minúsculas)
 
-| Entrada | Resultado Esperado | Motivo |
+| Caso | Entrada | Resultado Esperado | Motivo |
 |----------|-------------------|--------|
-| e1234567 | Inválido | No cumple formato requerido |
+| 18 | e1234567 | Inválido | No cumple formato requerido |
 
 ---
 
