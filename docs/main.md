@@ -48,6 +48,30 @@ Esto permite detectar errores comunes en validaciones de longitud.
 ---
 
 ## 4. Casos de Prueba Diseñados
+### RF3-Inscripción a Evento
+#### Condiciones
+
+- C1: ¿El estudiante está registrado?
+- C2: ¿El evento tiene cupos disponibles?
+- C3: ¿El estudiante ya está inscrito?
+
+#### Acciones
+
+- A1: Permitir inscripción
+- A2: Rechazar inscripción
+
+#### Tabla de Decisión
+
+| Regla | C1 Registrado | C2 Cupos | C3 Ya inscrito | Resultado |
+|--------|--------------|----------|---------------|------------|
+| CP-18  | Sí           | Sí       | No            | Permitir   |
+| CP-19  | No           | Sí       | No            | Rechazar   |
+| CP-20  | Sí           | No       | No            | Rechazar   |
+| CP-21  | Sí           | Sí       | Sí            | Rechazar   |
+| CP-22  | No           | No       | No            | Rechazar   |
+| CP-23  | No           | Sí       | Sí            | Rechazar   |
+| CP-24  | Sí           | No       | Sí            | Rechazar   |
+| CP-25  | No           | No       | Sí            | Rechazar   |
 ### Valor limite del RF-01: 
 
 | Numero de caso | Entrada   | valor esperado |
@@ -125,6 +149,31 @@ Se cubren:
 - Errores de formato
 - Errores de tipo de carácter
 - Posible error por mayúscula/minúscula
+
+### RF3-Inscripción a Evento
+#### Condiciones
+
+- C1: ¿El estudiante está registrado?
+- C2: ¿El evento tiene cupos disponibles?
+- C3: ¿El estudiante ya está inscrito?
+
+#### Acciones
+
+- A1: Permitir inscripción
+- A2: Rechazar inscripción
+
+#### Tabla de Decisión
+
+| Regla | C1 Registrado | C2 Cupos | C3 Ya inscrito | Resultado |
+|--------|--------------|----------|---------------|------------|
+| CP-18  | Sí           | Sí       | No            | Permitir   |
+| CP-19  | No           | Sí       | No            | Rechazar   |
+| CP-20  | Sí           | No       | No            | Rechazar   |
+| CP-21  | Sí           | Sí       | Sí            | Rechazar   |
+| CP-22  | No           | No       | No            | Rechazar   |
+| CP-23  | No           | Sí       | Sí            | Rechazar   |
+| CP-24  | Sí           | No       | Sí            | Rechazar   |
+| CP-25  | No           | No       | Sí            | Rechazar   |
 
 La cobertura es adecuada porque se prueba al menos un representante de cada partición válida e inválida.
 
