@@ -58,7 +58,7 @@ Todos cumplen:
 ##### Longitud incorrecta
 
 | Caso | Entrada | Resultado Esperado | Motivo |
-|----------|-------------------|--------|
+|-----|-----|-------------------|--------|
 | 10 | E123456  | Inválido | 7 caracteres |
 | 11 | E12345678 | Inválido | 9 caracteres |
 
@@ -67,27 +67,27 @@ Todos cumplen:
 ##### No inicia con E
 
 | Caso | Entrada | Resultado Esperado | Motivo |
-| 12 |----------|-------------------|--------|
-| 13 | A1234567 | Inválido | No inicia con E |
-| 14 | 12345678 | Inválido | No inicia con E |
+|------|----------|-------------------|--------|
+| 12 | A1234567 | Inválido | No inicia con E |
+| 13 | 12345678 | Inválido | No inicia con E |
 
 ---
 
 ##### Caracteres no numéricos después de la E
 
 | Caso | Entrada | Resultado Esperado | Motivo |
-|----------|-------------------|--------|
-| 15 | E1234A67 | Inválido | Contiene letra |
-| 16 | E1234-67 | Inválido | Contiene símbolo |
-| 17 | E1234 67 | Inválido | Contiene espacio |
+|------|---------|--------------------|--------|
+| 14 | E1234A67 | Inválido | Contiene letra |
+| 15 | E1234-67 | Inválido | Contiene símbolo |
+| 16 | E1234 67 | Inválido | Contiene espacio |
 
 ---
 
 ##### E en minúscula (si el sistema distingue mayúsculas y minúsculas)
 
 | Caso | Entrada | Resultado Esperado | Motivo |
-|----------|-------------------|--------|
-| 18 | e1234567 | Inválido | No cumple formato requerido |
+|-----|-----|-------------------|--------|
+| 17 | e1234567 | Inválido | No cumple formato requerido |
 
 ---
 
