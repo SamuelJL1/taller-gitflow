@@ -2,9 +2,13 @@
 
 ## 1. Descripcion del Sistema
 Plataforma de Gestion de eventos universitario.
+
 La plataforma permite:
+
 1.Registro de estudiantes.
+
 2.Validación de código estudiantil.
+
 3.Inscripción a eventos.
 
 ## 2. Requerimientos a Evaluar
